@@ -5,7 +5,8 @@ import { useRef } from "react"
 import { useLanguage } from "@/context/language-context"
 import { ParallaxSection, SectionHeader } from "./parallax-section"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink } from "lucide-react"
+import { FaGithub } from "react-icons/fa"
 
 const projects = [
   {
@@ -71,8 +72,8 @@ export function Projects() {
             >
               <div className="glass rounded-2xl p-6 h-full flex flex-col border border-transparent hover:border-primary/30 transition-all duration-300">
                 {/* Gradient Header */}
-                <div className={`h-32 rounded-xl bg-gradient-to-br ${project.gradient} mb-6 flex items-center justify-center relative overflow-hidden`}>
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className={`h-32 rounded-xl bg-linear-to-br ${project.gradient} mb-6 flex items-center justify-center relative overflow-hidden`}>
+                  <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   <span className="text-4xl font-bold text-primary/30 group-hover:text-primary/50 transition-colors">
                     0{project.id}
                   </span>
@@ -83,7 +84,7 @@ export function Projects() {
                   {t(project.titleKey)}
                 </h3>
                 
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-grow">
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4 grow">
                   {t(project.descKey)}
                 </p>
                 
@@ -108,7 +109,7 @@ export function Projects() {
                     className="flex-1 border-primary/30 hover:bg-primary/10 hover:border-primary"
                   >
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
+                      <FaGithub className="mr-2 h-4 w-4" />
                       {t("projects.viewCode")}
                     </a>
                   </Button>
