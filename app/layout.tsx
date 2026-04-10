@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next"
 import { Inter, JetBrains_Mono, Geist } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/context/language-context"
 import "./globals.css"
 import { cn } from "@/lib/utils";
@@ -46,7 +45,6 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
         </LanguageProvider>
-        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   )
