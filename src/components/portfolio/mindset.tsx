@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import { useLanguage } from "@/context/language-context"
-import { ParallaxSection, SectionHeader } from "./parallax-section"
-import { Layout, Repeat, Shield, Users } from "lucide-react"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { useLanguage } from "@/src/context/language-context";
+import { ParallaxSection, SectionHeader } from "./parallax-section";
+import { Layout, Repeat, Shield, Users } from "lucide-react";
 
 const mindsetItems = [
   {
@@ -27,21 +27,21 @@ const mindsetItems = [
     descKey: "mindset.user.desc",
     icon: Users,
   },
-]
+];
 
 export function Mindset() {
-  const { t } = useLanguage()
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const { t } = useLanguage();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <ParallaxSection id="mindset">
       <div className="container mx-auto px-4">
-        <SectionHeader 
-          title={t("mindset.title")} 
-          subtitle={t("mindset.subtitle")} 
+        <SectionHeader
+          title={t("mindset.title")}
+          subtitle={t("mindset.subtitle")}
         />
-        
+
         <div ref={ref} className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {mindsetItems.map((item, index) => (
             <motion.div
@@ -70,5 +70,5 @@ export function Mindset() {
         </div>
       </div>
     </ParallaxSection>
-  )
+  );
 }

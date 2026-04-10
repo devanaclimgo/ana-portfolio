@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { useLanguage } from "@/context/language-context"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from "@/src/context/language-context";
+import { Menu, X } from "lucide-react";
+import { Button } from "../../components/ui/button";
 
 const navItems = [
   { key: "nav.about", href: "#about" },
@@ -14,24 +14,24 @@ const navItems = [
   { key: "nav.tools", href: "#tools" },
   { key: "nav.mindset", href: "#mindset" },
   { key: "nav.contact", href: "#contact" },
-]
+];
 
 export function Header() {
-  const { language, setLanguage, t } = useLanguage()
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { language, setLanguage, t } = useLanguage();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleLanguage = () => {
-    setLanguage(language === "pt" ? "en" : "pt")
-  }
+    setLanguage(language === "pt" ? "en" : "pt");
+  };
 
   return (
     <motion.header
@@ -73,11 +73,19 @@ export function Header() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className={language === "pt" ? "text-primary" : "text-muted-foreground"}>
+            <span
+              className={
+                language === "pt" ? "text-primary" : "text-muted-foreground"
+              }
+            >
               PT
             </span>
             <span className="text-muted-foreground">/</span>
-            <span className={language === "en" ? "text-primary" : "text-muted-foreground"}>
+            <span
+              className={
+                language === "en" ? "text-primary" : "text-muted-foreground"
+              }
+            >
               EN
             </span>
           </motion.button>
@@ -89,7 +97,11 @@ export function Header() {
             className="lg:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {isMobileMenuOpen ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
           </Button>
         </div>
       </div>
@@ -119,5 +131,5 @@ export function Header() {
         )}
       </AnimatePresence>
     </motion.header>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import { useLanguage } from "@/context/language-context"
-import { ParallaxSection, SectionHeader } from "./parallax-section"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { useLanguage } from "@/src/context/language-context";
+import { ParallaxSection, SectionHeader } from "./parallax-section";
 
 const techCategories = [
   {
@@ -46,21 +46,18 @@ const techCategories = [
       { name: "Kubernetes", level: 70 },
     ],
   },
-]
+];
 
 export function TechStack() {
-  const { t } = useLanguage()
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const { t } = useLanguage();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <ParallaxSection id="tech">
       <div className="container mx-auto px-4">
-        <SectionHeader 
-          title={t("tech.title")} 
-          subtitle={t("tech.subtitle")} 
-        />
-        
+        <SectionHeader title={t("tech.title")} subtitle={t("tech.subtitle")} />
+
         <div ref={ref} className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {techCategories.map((category, catIndex) => (
             <motion.div
@@ -73,13 +70,17 @@ export function TechStack() {
               <h3 className="text-lg font-semibold text-primary mb-6">
                 {t(category.titleKey)}
               </h3>
-              
+
               <div className="space-y-4">
                 {category.techs.map((tech, techIndex) => (
                   <div key={tech.name}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm text-foreground">{tech.name}</span>
-                      <span className="text-xs text-muted-foreground">{tech.level}%</span>
+                      <span className="text-sm text-foreground">
+                        {tech.name}
+                      </span>
+                      <span className="text-xs text-muted-foreground">
+                        {tech.level}%
+                      </span>
                     </div>
                     <div className="h-2 bg-secondary/50 rounded-full overflow-hidden">
                       <motion.div
@@ -101,5 +102,5 @@ export function TechStack() {
         </div>
       </div>
     </ParallaxSection>
-  )
+  );
 }

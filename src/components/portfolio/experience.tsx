@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import { useLanguage } from "@/context/language-context"
-import { ParallaxSection, SectionHeader } from "./parallax-section"
-import { Briefcase, CheckCircle } from "lucide-react"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { useLanguage } from "@/src/context/language-context";
+import { ParallaxSection, SectionHeader } from "./parallax-section";
+import { Briefcase, CheckCircle } from "lucide-react";
 
 const experiences = [
   {
@@ -12,7 +12,11 @@ const experiences = [
     roleKey: "exp.1.role",
     companyKey: "exp.1.company",
     periodKey: "exp.1.period",
-    achievements: ["exp.1.achievement1", "exp.1.achievement2", "exp.1.achievement3"],
+    achievements: [
+      "exp.1.achievement1",
+      "exp.1.achievement2",
+      "exp.1.achievement3",
+    ],
     isCurrent: true,
   },
   {
@@ -20,7 +24,11 @@ const experiences = [
     roleKey: "exp.2.role",
     companyKey: "exp.2.company",
     periodKey: "exp.2.period",
-    achievements: ["exp.2.achievement1", "exp.2.achievement2", "exp.2.achievement3"],
+    achievements: [
+      "exp.2.achievement1",
+      "exp.2.achievement2",
+      "exp.2.achievement3",
+    ],
     isCurrent: false,
   },
   {
@@ -28,25 +36,29 @@ const experiences = [
     roleKey: "exp.3.role",
     companyKey: "exp.3.company",
     periodKey: "exp.3.period",
-    achievements: ["exp.3.achievement1", "exp.3.achievement2", "exp.3.achievement3"],
+    achievements: [
+      "exp.3.achievement1",
+      "exp.3.achievement2",
+      "exp.3.achievement3",
+    ],
     isCurrent: false,
   },
-]
+];
 
 export function Experience() {
-  const { t } = useLanguage()
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const { t } = useLanguage();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <ParallaxSection id="experience">
       <div className="container mx-auto px-4">
         <SectionHeader title={t("experience.title")} />
-        
+
         <div ref={ref} className="max-w-3xl mx-auto relative">
           {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-px bg-linear-to-b from-primary via-primary/50 to-transparent hidden md:block" />
-          
+
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
@@ -57,9 +69,11 @@ export function Experience() {
             >
               {/* Timeline dot */}
               <div className="absolute left-6 top-6 hidden md:flex items-center justify-center">
-                <div className={`w-4 h-4 rounded-full ${exp.isCurrent ? "bg-primary glow-purple-sm" : "bg-secondary border border-primary/30"}`} />
+                <div
+                  className={`w-4 h-4 rounded-full ${exp.isCurrent ? "bg-primary glow-purple-sm" : "bg-secondary border border-primary/30"}`}
+                />
               </div>
-              
+
               <div className="glass rounded-2xl p-6 md:ml-16 group hover:border-primary/30 transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div className="flex items-center gap-3 mb-2 md:mb-0">
@@ -68,18 +82,22 @@ export function Experience() {
                       <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                         {t(exp.roleKey)}
                       </h3>
-                      <p className="text-sm text-lavender">{t(exp.companyKey)}</p>
+                      <p className="text-sm text-lavender">
+                        {t(exp.companyKey)}
+                      </p>
                     </div>
                   </div>
-                  <span className={`text-sm px-3 py-1 rounded-full w-fit ${
-                    exp.isCurrent 
-                      ? "bg-primary/20 text-primary border border-primary/30" 
-                      : "bg-secondary/50 text-muted-foreground"
-                  }`}>
+                  <span
+                    className={`text-sm px-3 py-1 rounded-full w-fit ${
+                      exp.isCurrent
+                        ? "bg-primary/20 text-primary border border-primary/30"
+                        : "bg-secondary/50 text-muted-foreground"
+                    }`}
+                  >
                     {t(exp.periodKey)}
                   </span>
                 </div>
-                
+
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, i) => (
                     <motion.li
@@ -100,5 +118,5 @@ export function Experience() {
         </div>
       </div>
     </ParallaxSection>
-  )
+  );
 }

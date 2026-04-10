@@ -1,25 +1,26 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useScroll, useTransform } from "framer-motion"
-import { useLanguage } from "@/context/language-context"
-import { Button } from "@/components/ui/button"
-import { ArrowDown, Download, Mail } from "lucide-react"
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useLanguage } from "@/src/context/language-context";
+import { Button } from "../../components/ui/button";
+import { ArrowDown, Download, Mail } from "lucide-react";
 
 export function Hero() {
-  const { language, t } = useLanguage()
-  const containerRef = useRef<HTMLElement>(null)
-  
+  const { language, t } = useLanguage();
+  const containerRef = useRef<HTMLElement>(null);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
-  })
-  
-  const y1 = useTransform(scrollYProgress, [0, 1], [0, 200])
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, 400])
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+  });
 
-  const resumeFile = language === "pt" ? "/ana-gomes-cv-pt.pdf" : "/ana-gomes-cv-en.pdf"
+  const y1 = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, 400]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+
+  const resumeFile =
+    language === "pt" ? "/ana-gomes-cv-pt.pdf" : "/ana-gomes-cv-en.pdf";
 
   return (
     <section
@@ -34,7 +35,7 @@ export function Hero() {
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-[100px]" />
         <div className="absolute bottom-40 right-20 w-96 h-96 bg-accent/15 rounded-full blur-[120px]" />
       </motion.div>
-      
+
       <motion.div
         style={{ y: y1 }}
         className="absolute inset-0 pointer-events-none"
@@ -44,7 +45,7 @@ export function Hero() {
       </motion.div>
 
       {/* Grid Pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `linear-gradient(rgba(139, 92, 246, 0.5) 1px, transparent 1px),
@@ -66,7 +67,7 @@ export function Hero() {
         >
           {t("hero.greeting")}
         </motion.p>
-        
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,7 +76,7 @@ export function Hero() {
         >
           <span className="text-primary">{t("hero.name")}</span>
         </motion.h1>
-        
+
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -84,7 +85,7 @@ export function Hero() {
         >
           {t("hero.title")}
         </motion.h2>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -93,7 +94,7 @@ export function Hero() {
         >
           {t("hero.tagline")}
         </motion.p>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -105,11 +106,9 @@ export function Hero() {
             size="lg"
             className="glow-purple bg-primary hover:bg-primary/90 text-primary-foreground px-8"
           >
-            <a href="#projects">
-              {t("hero.cta.projects")}
-            </a>
+            <a href="#projects">{t("hero.cta.projects")}</a>
           </Button>
-          
+
           <Button
             asChild
             variant="outline"
@@ -121,7 +120,7 @@ export function Hero() {
               {t("hero.cta.contact")}
             </a>
           </Button>
-          
+
           <Button
             asChild
             variant="ghost"
@@ -151,5 +150,5 @@ export function Hero() {
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }

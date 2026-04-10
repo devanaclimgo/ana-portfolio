@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useLanguage } from "@/context/language-context"
-import { Heart } from "lucide-react"
+import { motion } from "framer-motion";
+import { useLanguage } from "@/src/context/language-context";
+import { Heart } from "lucide-react";
 
 export function Footer() {
-  const { t } = useLanguage()
-  const currentYear = new Date().getFullYear()
+  const { t } = useLanguage();
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="relative py-8 border-t border-primary/10">
@@ -21,7 +21,7 @@ export function Footer() {
           <p>
             &copy; {currentYear} Ana Gomes. {t("footer.rights")}
           </p>
-          
+
           <p className="flex items-center gap-1">
             {t("footer.built")}{" "}
             <Heart className="h-4 w-4 text-primary fill-primary inline-block mx-1" />
@@ -30,5 +30,5 @@ export function Footer() {
         </motion.div>
       </div>
     </footer>
-  )
+  );
 }

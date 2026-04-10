@@ -2,11 +2,11 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { useLanguage } from "@/context/language-context";
+import { useLanguage } from "@/src/context/language-context";
 import { ParallaxSection, SectionHeader } from "./parallax-section";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Textarea } from "../../components/ui/textarea";
 import { Send, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 

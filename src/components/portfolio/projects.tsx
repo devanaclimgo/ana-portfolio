@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import { useLanguage } from "@/context/language-context"
-import { ParallaxSection, SectionHeader } from "./parallax-section"
-import { Button } from "@/components/ui/button"
-import { ExternalLink } from "lucide-react"
-import { FaGithub } from "react-icons/fa"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { useLanguage } from "@/src/context/language-context";
+import { ParallaxSection, SectionHeader } from "./parallax-section";
+import { Button } from "../../components/ui/button";
+import { ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
@@ -45,21 +45,21 @@ const projects = [
     live: "https://example.com",
     gradient: "from-primary/20 to-cyan-accent/20",
   },
-]
+];
 
 export function Projects() {
-  const { t } = useLanguage()
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const { t } = useLanguage();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <ParallaxSection id="projects">
       <div className="container mx-auto px-4">
-        <SectionHeader 
-          title={t("projects.title")} 
-          subtitle={t("projects.subtitle")} 
+        <SectionHeader
+          title={t("projects.title")}
+          subtitle={t("projects.subtitle")}
         />
-        
+
         <div ref={ref} className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
@@ -72,22 +72,24 @@ export function Projects() {
             >
               <div className="glass rounded-2xl p-6 h-full flex flex-col border border-transparent hover:border-primary/30 transition-all duration-300">
                 {/* Gradient Header */}
-                <div className={`h-32 rounded-xl bg-linear-to-br ${project.gradient} mb-6 flex items-center justify-center relative overflow-hidden`}>
+                <div
+                  className={`h-32 rounded-xl bg-linear-to-br ${project.gradient} mb-6 flex items-center justify-center relative overflow-hidden`}
+                >
                   <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   <span className="text-4xl font-bold text-primary/30 group-hover:text-primary/50 transition-colors">
                     0{project.id}
                   </span>
                 </div>
-                
+
                 {/* Content */}
                 <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {t(project.titleKey)}
                 </h3>
-                
+
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4 grow">
                   {t(project.descKey)}
                 </p>
-                
+
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
@@ -99,7 +101,7 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                
+
                 {/* Actions */}
                 <div className="flex gap-3">
                   <Button
@@ -108,7 +110,11 @@ export function Projects() {
                     size="sm"
                     className="flex-1 border-primary/30 hover:bg-primary/10 hover:border-primary"
                   >
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaGithub className="mr-2 h-4 w-4" />
                       {t("projects.viewCode")}
                     </a>
@@ -118,7 +124,11 @@ export function Projects() {
                     size="sm"
                     className="flex-1 bg-primary hover:bg-primary/90"
                   >
-                    <a href={project.live} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <ExternalLink className="mr-2 h-4 w-4" />
                       {t("projects.viewLive")}
                     </a>
@@ -130,5 +140,5 @@ export function Projects() {
         </div>
       </div>
     </ParallaxSection>
-  )
+  );
 }
