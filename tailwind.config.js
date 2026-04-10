@@ -5,12 +5,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "neon-purple": "#a855f7",
-        "neon-purple-glow": "#c084fc",
-        "lavender": "#c4b5fd",
-        "cyan-accent": "#22d3ee",
-        "dark-bg": "#0b0118",
-        "dark-surface": "#140726",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        "primary-foreground": "var(--primary-foreground)",
+        muted: "var(--muted)",
+        "muted-foreground": "var(--muted-foreground)",
+        accent: "var(--accent)",
+        border: "var(--border)",
       },
     },
   },
