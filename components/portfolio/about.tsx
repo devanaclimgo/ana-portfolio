@@ -7,9 +7,9 @@ import { ParallaxSection, SectionHeader } from "./parallax-section"
 import { Code2, Lightbulb, Rocket } from "lucide-react"
 
 const highlights = [
-  { icon: Code2, label: "5+ Anos", sublabel: "de Experiência" },
-  { icon: Rocket, label: "50+", sublabel: "Projetos Entregues" },
-  { icon: Lightbulb, label: "10+", sublabel: "Tecnologias" },
+  { icon: Code2, label: "Full-Stack", sublabel: "com Foco em Performance & Arquitetura" },
+  { icon: Lightbulb, label: "1+ Ano", sublabel: "em Produção (SaaS Real)" },
+  { icon: Rocket, label: "10+", sublabel: "Projetos e Experimentos Construídos" },
 ]
 
 export function About() {
