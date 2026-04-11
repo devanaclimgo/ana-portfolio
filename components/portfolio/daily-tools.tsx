@@ -1,21 +1,23 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import { useLanguage } from "@/context/language-context"
-import { ParallaxSection, SectionHeader } from "./parallax-section"
-import { 
-  Terminal, 
-  GitBranch, 
-  Box, 
-  Code, 
-  Monitor, 
-  Globe, 
-  Palette, 
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { useLanguage } from "@/context/language-context";
+import { ParallaxSection, SectionHeader } from "./parallax-section";
+import {
+  Terminal,
+  GitBranch,
+  Box,
+  Code,
+  Monitor,
+  Globe,
+  Palette,
   MessageSquare,
   Zap,
-  Cloud
-} from "lucide-react"
+  Cloud,
+  Database,
+  Cpu,
+} from "lucide-react";
 
 const tools = [
   { name: "VS Code", icon: Code, category: "Editor" },
@@ -23,26 +25,28 @@ const tools = [
   { name: "GitHub", icon: Globe, category: "Platform" },
   { name: "Docker", icon: Box, category: "Containers" },
   { name: "Terminal", icon: Terminal, category: "CLI" },
-  { name: "Figma", icon: Palette, category: "Design" },
+
+  { name: "Postman", icon: Globe, category: "API Testing" },
+  { name: "Redis", icon: Database, category: "Caching" },
+  { name: "Sidekiq", icon: Cpu, category: "Background Jobs" },
+
+  { name: "AWS (S3, EC2)", icon: Cloud, category: "Cloud" },
   { name: "Vercel", icon: Zap, category: "Deployment" },
-  { name: "Notion", icon: Monitor, category: "Docs" },
-  { name: "Slack", icon: MessageSquare, category: "Communication" },
-  { name: "AWS", icon: Cloud, category: "Cloud" },
-]
+];
 
 export function DailyTools() {
-  const { t } = useLanguage()
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const { t } = useLanguage();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <ParallaxSection id="tools">
       <div className="container mx-auto px-4">
-        <SectionHeader 
-          title={t("tools.title")} 
-          subtitle={t("tools.subtitle")} 
+        <SectionHeader
+          title={t("tools.title")}
+          subtitle={t("tools.subtitle")}
         />
-        
+
         <div ref={ref} className="max-w-4xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
             {tools.map((tool, index) => (
@@ -51,9 +55,9 @@ export function DailyTools() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: index * 0.05, duration: 0.3 }}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.05,
-                  transition: { duration: 0.2 }
+                  transition: { duration: 0.2 },
                 }}
                 className="glass rounded-xl p-4 text-center group cursor-pointer hover:border-primary/30 transition-all duration-300"
               >
@@ -74,5 +78,5 @@ export function DailyTools() {
         </div>
       </div>
     </ParallaxSection>
-  )
+  );
 }
