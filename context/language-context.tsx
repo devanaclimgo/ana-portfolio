@@ -37,6 +37,16 @@ const translations = {
     "hero.cta.contact": "Contato",
     "hero.cta.resume": "Baixar Currículo",
 
+    // Highlights
+    "highlights.1.label": "Full-Stack",
+    "highlights.1.sublabel": "com foco em performance e arquitetura",
+
+    "highlights.2.label": "1+ Ano",
+    "highlights.2.sublabel": "em produção (SaaS real)",
+
+    "highlights.3.label": "10+",
+    "highlights.3.sublabel": "projetos e sistemas construídos",
+
     // About
     "about.title": "Sobre Mim",
     "about.bio":
@@ -156,6 +166,16 @@ const translations = {
     "hero.cta.projects": "View Projects",
     "hero.cta.contact": "Contact",
     "hero.cta.resume": "Download Resume",
+
+    // Highlights
+    "highlights.1.label": "Full-Stack",
+    "highlights.1.sublabel": "focused on performance and system design",
+
+    "highlights.2.label": "1+ Year",
+    "highlights.2.sublabel": "in production (real SaaS)",
+
+    "highlights.3.label": "10+",
+    "highlights.3.sublabel": "projects and systems built",
 
     // About
     "about.title": "About Me",
