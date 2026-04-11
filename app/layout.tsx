@@ -16,8 +16,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Ana Gomes | Full-Stack Engineer",
-  description: "Portfólio de Ana Gomes - Engenheira Full-Stack especializada em criar experiências digitais elegantes e performáticas.",
-  keywords: ["desenvolvedor", "full-stack", "react", "next.js", "typescript", "portfólio"],
+  description: "Portfólio de Ana Gomes - Engenheira Full-Stack especializada Ruby on Rails, React e TypeScript. Transformando ideias complexas em experiências digitais elegantes.",
+  keywords: ["desenvolvedor", "full-stack", "react", "ruby on rails", "typescript", "portfólio"],
   authors: [{ name: "Ana Gomes" }],
   openGraph: {
     title: "Ana Gomes | Full-Stack Engineer",
