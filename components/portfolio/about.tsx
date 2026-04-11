@@ -1,27 +1,39 @@
-"use client"
+"use client";
 
-import { motion, useInView } from "framer-motion"
-import { useRef } from "react"
-import { useLanguage } from "@/context/language-context"
-import { ParallaxSection, SectionHeader } from "./parallax-section"
-import { Code2, Lightbulb, Rocket } from "lucide-react"
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { useLanguage } from "@/context/language-context";
+import { ParallaxSection, SectionHeader } from "./parallax-section";
+import { Code2, Lightbulb, Rocket } from "lucide-react";
 
 const highlights = [
-  { icon: Code2, label: "Full-Stack", sublabel: "com Foco em Performance & Arquitetura" },
-  { icon: Lightbulb, label: "1+ Ano", sublabel: "em Produção (SaaS Real)" },
-  { icon: Rocket, label: "10+", sublabel: "Projetos e Experimentos Construídos" },
-]
+  {
+    icon: Code2,
+    labelKey: "highlights.1.label",
+    sublabelKey: "highlights.1.sublabel",
+  },
+  {
+    icon: Lightbulb,
+    labelKey: "highlights.2.label",
+    sublabelKey: "highlights.2.sublabel",
+  },
+  {
+    icon: Rocket,
+    labelKey: "highlights.3.label",
+    sublabelKey: "highlights.3.sublabel",
+  },
+];
 
 export function About() {
-  const { t } = useLanguage()
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const { t } = useLanguage();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <ParallaxSection id="about">
       <div className="container mx-auto px-4">
         <SectionHeader title={t("about.title")} />
-        
+
         <div className="max-w-4xl mx-auto">
           <div ref={ref} className="glass rounded-2xl p-8 md:p-12">
             <div className="grid md:grid-cols-3 gap-6 mb-10">
@@ -34,12 +46,16 @@ export function About() {
                   className="text-center p-6 rounded-xl bg-secondary/30 border border-primary/10 hover:border-primary/30 transition-colors"
                 >
                   <item.icon className="h-8 w-8 text-primary mx-auto mb-3" />
-                  <p className="text-2xl font-bold text-primary">{item.label}</p>
-                  <p className="text-sm text-muted-foreground">{item.sublabel}</p>
+                  <p className="text-2xl font-bold text-primary">
+                    {t(item.labelKey)}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {t(item.sublabelKey)}
+                  </p>
                 </motion.div>
               ))}
             </div>
-            
+
             <motion.p
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
@@ -48,7 +64,7 @@ export function About() {
             >
               {t("about.bio")}
             </motion.p>
-            
+
             <motion.p
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
@@ -61,5 +77,5 @@ export function About() {
         </div>
       </div>
     </ParallaxSection>
-  )
+  );
 }
