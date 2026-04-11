@@ -23,14 +23,6 @@ const experiences = [
     achievements: ["exp.2.achievement1", "exp.2.achievement2", "exp.2.achievement3"],
     isCurrent: false,
   },
-  {
-    id: 3,
-    roleKey: "exp.3.role",
-    companyKey: "exp.3.company",
-    periodKey: "exp.3.period",
-    achievements: ["exp.3.achievement1", "exp.3.achievement2", "exp.3.achievement3"],
-    isCurrent: false,
-  },
 ]
 
 export function Experience() {
@@ -45,7 +37,7 @@ export function Experience() {
         
         <div ref={ref} className="max-w-3xl mx-auto relative">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block" />
+          <div className="absolute left-8 top-0 bottom-0 w-px bg-linear-to-b from-primary via-primary/50 to-transparent hidden md:block" />
           
           {experiences.map((exp, index) => (
             <motion.div
