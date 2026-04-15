@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ Ana Gomes — Full-Stack Engineer Portfolio
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/tailwindcss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/framer--motion-black?style=for-the-badge&logo=framer&logoColor=blue)
+
+</div>
+
+## 🌐 Live Demo
+
+👉 https://ana-portfolio-alpha.vercel.app
+
+## 🧠 About the Project
+
+This is my personal portfolio — designed and built to reflect not only my work, but **how I think as an engineer**.
+
+Instead of a static page, this project focuses on:
+- smooth, intentional interactions
+- performance-first frontend architecture
+- clean and scalable structure
+- strong visual identity
+
+It’s a mix of **engineering + product thinking + design execution**.
+
+## ⚡ Key Features
+
+✨ **Modern UI & Motion**
+- Smooth animations with Framer Motion
+- Parallax effects and scroll-based interactions
+- Micro-interactions focused on UX
+
+🌙 **Custom Design System**
+- Dark-first theme with neon accents
+- Reusable components and consistent spacing
+- Tailwind-based styling with custom tokens
+
+🌍 **Internationalization (i18n)**
+- Fully translated (EN 🇺🇸 / PT-BR 🇧🇷)
+- Dynamic content switching across the entire app
+
+📄 **Dynamic Resume Download**
+- Automatically serves the correct CV version based on selected language
+
+📬 **Contact Section**
+- Functional contact form (email integration)
+- Direct links to GitHub, LinkedIn, and email
+
+## 🏗️ Tech Stack
+
+**Frontend**
+- Next.js (App Router)
+- React
+- TypeScript
+
+**Styling & UI**
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+
+**Architecture**
+- Component-based structure
+- Context API (language management)
+- Clean separation of concerns
+
+## 📁 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+ ├── app/            # Next.js app router
+ ├── components/     # Page sections (Hero, Projects, Contact...) and reusable UI components
+ ├── context/        # Language context (i18n)
+ ├── lib/            # Utilities
+ ├── public/         # Resume files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Running Locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# clone the repo
+git clone https://github.com/devanaclimgo/ana-portfolio
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# install dependencies
+npm install
 
-## Learn More
+# run the project
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Design Philosophy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This portfolio was built with a few core principles:
+-	**Performance over complexity**
+-	**Clarity over decoration**
+-	**Interaction as a feature, not an accessory**
+-	**Consistency across all UI layers**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Every section was designed to feel intentional — not just visually appealing, but structurally sound.
 
-## Deploy on Vercel
+## 📌 Highlights
+- Built from scratch (no templates)
+- Fully responsive and optimized
+- Clean, scalable architecture
+- Designed to reflect real-world engineering standards
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact
+- GitHub: https://github.com/devanaclimgo
+- LinkedIn: https://linkedin.com/in/ana-clara-gomes-48b83b224
+- Email: anaclimgo@gmail.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+
+###### ✨ Built with intention, not just code.
+
+</div>
