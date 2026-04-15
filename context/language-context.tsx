@@ -89,8 +89,8 @@ const translations = {
     "exp.1.achievement3":
       "Desenho e integração de APIs REST, melhorando o fluxo de dados e reduzindo o uso de APIs externas em até 90%",
 
-    "exp.2.role": "Engenheira de Software",
-    "exp.2.company": "Insucheck (Projeto MVP)",
+    "exp.2.role": "Engenheira Front-End",
+    "exp.2.company": "Insucheck (Projeto MVP - Pipoca Ágil)",
     "exp.2.period": "2025",
     "exp.2.achievement1":
       "Desenvolvimento de interfaces com React e TypeScript focando em usabilidade e qualidade de UI",
@@ -219,8 +219,8 @@ const translations = {
     "exp.1.achievement3":
       "Designed and integrated REST APIs, improving data flow and reducing external API usage by up to 90%",
 
-    "exp.2.role": "Software Engineer",
-    "exp.2.company": "Insucheck (MVP Project)",
+    "exp.2.role": "Front-End Engineer",
+    "exp.2.company": "Insucheck (MVP Project - Pipoca Ágil)",
     "exp.2.period": "2025",
     "exp.2.achievement1":
       "Developed frontend interfaces using React and TypeScript with focus on clean UI and usability",
