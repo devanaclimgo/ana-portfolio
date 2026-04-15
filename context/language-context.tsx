@@ -72,7 +72,7 @@ const translations = {
       "Aplicação full-stack para envio de mensagens ao futuro, com sistema de liberação temporal no backend e regras de acesso baseadas em data.",
     "project.4.title": "Forge AI",
     "project.4.description":
-      "Sistema de agentes com integração a APIs de IA, focado em orquestração de tarefas, otimização de requisições e redução de custos em workflows baseados em LLM.",
+      "Plataforma de planejamento de projetos com IA que utiliza sistemas multi-agentes para transformar ideias em tasks, sprints e workflows dinâmicos, simulando um time de especialistas guiando decisões ao longo do desenvolvimento.",
 
     // Experience
     "experience.title": "Experiência",
@@ -202,7 +202,7 @@ const translations = {
       "Full-stack application for sending messages to your future self, featuring backend-enforced time-based content release and access control.",
     "project.4.title": "Forge AI",
     "project.4.description":
-      "Agent-based system integrating AI APIs, focused on task orchestration, request optimization, and cost reduction in LLM-driven workflows.",
+      "AI-powered project planning platform that uses multi-agent systems to transform ideas into structured tasks, sprints, and evolving workflows, simulating a team of specialists guiding development decisions over time.",
 
     // Experience
     "experience.title": "Experience",
