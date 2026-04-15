@@ -25,7 +25,6 @@ export function Footer() {
           <p className="flex items-center gap-1">
             {t("footer.built")}{" "}
             <Heart className="h-4 w-4 text-primary fill-primary inline-block mx-1" />
-            Next.js & TailwindCSS
           </p>
         </motion.div>
       </div>
