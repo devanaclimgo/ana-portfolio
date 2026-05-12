@@ -213,10 +213,8 @@ const translations = {
     "exp.1.period": "Sep 2025 - Present",
     "exp.1.achievement1":
       "Built and maintained production React interfaces focused on performance, scalability, and user experience",
-
     "exp.1.achievement2":
       "Reduced AI operational costs by 70–85% through caching strategies, batching, and optimized request flows",
-
     "exp.1.achievement3":
       "Implemented local-first persistence and API optimization strategies reducing external API calls by up to 90–95%",
 
@@ -225,10 +223,8 @@ const translations = {
     "exp.2.period": "2025",
     "exp.2.achievement1":
       "Developed responsive interfaces using React, React Native, and TypeScript with strong focus on usability and UI quality",
-
     "exp.2.achievement2":
       "Integrated REST APIs and collaborated closely with backend teams to improve data flow and feature delivery",
-
     "exp.2.achievement3":
       "Introduced Docker-based workflows improving development environment consistency across the team",
 
