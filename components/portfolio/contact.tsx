@@ -13,7 +13,7 @@ const socialLinks = [
   { icon: Github, href: "https://github.com/devanaclimgo", label: "GitHub" },
   {
     icon: Linkedin,
-    href: "https://www.linkedin.com/in/ana-clara-gomes-48b83b224",
+    href: "https://www.linkedin.com/in/ana-gomes-dev",
     label: "LinkedIn",
   },
   { icon: Mail, href: "mailto:anaclimgo@gmail.com", label: "Email" },
