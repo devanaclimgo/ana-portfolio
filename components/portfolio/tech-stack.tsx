@@ -9,8 +9,8 @@ const techCategories = [
   {
     titleKey: "tech.frontend",
     techs: [
-      { name: "React", level: 85 },
-      { name: "Next.js", level: 80 },
+      { name: "React", level: 90 },
+      { name: "Next.js", level: 90 },
       { name: "TypeScript", level: 85 },
       { name: "Tailwind CSS", level: 85 },
     ],
@@ -18,7 +18,7 @@ const techCategories = [
   {
     titleKey: "tech.backend",
     techs: [
-      { name: "Ruby on Rails", level: 90 },
+      { name: "Ruby on Rails", level: 85 },
       { name: "REST APIs", level: 90 },
       { name: "PostgreSQL", level: 85 },
       { name: "Redis", level: 75 },
