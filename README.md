@@ -108,7 +108,7 @@ Every section was designed to feel intentional — not just visually appealing, 
 
 ## 📬 Contact
 - GitHub: https://github.com/devanaclimgo
-- LinkedIn: https://linkedin.com/in/ana-clara-gomes-48b83b224
+- LinkedIn: https://linkedin.com/in/ana-gomes-dev
 - Email: anaclimgo@gmail.com
 
 <div align="center">
