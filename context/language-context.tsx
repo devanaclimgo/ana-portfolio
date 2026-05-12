@@ -222,7 +222,7 @@ const translations = {
 
     "exp.2.role": "Front-End Engineer",
     "exp.2.company": "Insucheck (MVP Project - Pipoca Ágil)",
-    "exp.2.period": "Jan 2023 - Aug 2023",
+    "exp.2.period": "2025",
     "exp.2.achievement1":
       "Developed responsive interfaces using React, React Native, and TypeScript with strong focus on usability and UI quality",
 
