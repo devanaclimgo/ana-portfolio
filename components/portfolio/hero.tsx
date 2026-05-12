@@ -20,7 +20,7 @@ export function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   const resumeFile =
-    language === "pt" ? "/Ana_Gomes-CV-PT.pdf" : "/Ana_Gomes-CV-EN.pdf";
+    language === "pt" ? "/Ana-Gomes_CV.pdf" : "/Ana-Gomes_CV.pdf";
 
   return (
     <section
