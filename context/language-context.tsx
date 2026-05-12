@@ -30,16 +30,16 @@ const translations = {
     // Hero
     "hero.greeting": "Olá, eu sou",
     "hero.name": "Ana Gomes",
-    "hero.title": "Engenheira Full-Stack",
+    "hero.title": "Engenheira de Software",
     "hero.tagline":
-      "Transformando sistemas complexos em produtos rápidos, eficientes e escaláveis.",
+      "Construindo experiências digitais rápidas, escaláveis e impulsionadas por IA.",
     "hero.cta.projects": "Ver Projetos",
     "hero.cta.contact": "Contato",
     "hero.cta.resume": "Baixar Currículo",
 
     // Highlights
-    "highlights.1.label": "Full-Stack",
-    "highlights.1.sublabel": "com foco em performance e arquitetura",
+    "highlights.1.label": "Frontend + Full-Stack",
+    "highlights.1.sublabel": "com foco em produto, performance e UX",
 
     "highlights.2.label": "1+ Ano",
     "highlights.2.sublabel": "em produção (SaaS real)",
@@ -50,9 +50,9 @@ const translations = {
     // About
     "about.title": "Sobre Mim",
     "about.bio":
-      "Sou Full-Stack Engineer especializada em Ruby on Rails e React, com experiência construindo e escalando aplicações SaaS em produção. Tenho forte foco em performance, arquitetura e otimização de custos, incluindo redução de até 85% em operações com IA através de estratégias como caching, batching e redesign de fluxos de dados.",
+      "Engenheira de Software com foco em frontend, especializada na construção de aplicações SaaS modernas, interfaces com IA e produtos web escaláveis utilizando React, Next.js, TypeScript e Ruby on Rails. Tenho forte foco em performance, experiência do usuário e arquitetura frontend.",
     "about.bio2":
-      "Trabalho de ponta a ponta, desde decisões de arquitetura até deploy e monitoramento, sempre buscando soluções elegantes para problemas reais. Minha abordagem combina engenharia sólida com atenção à experiência do usuário, criando produtos rápidos, eficientes e agradáveis de usar.",
+      "Atuo em toda a stack, mas meu principal interesse está em criar experiências intuitivas, rápidas e escaláveis, equilibrando engenharia sólida com decisões centradas no produto. Tenho experiência colaborando diretamente em arquitetura, APIs, workflows com IA e otimização de sistemas para ambientes reais de produção.",
 
     // Projects
     "projects.title": "Projetos",
@@ -79,25 +79,24 @@ const translations = {
     "experience.present": "Presente",
 
     // Experience items
-    "exp.1.role": "Engenheira Full-Stack",
+    "exp.1.role": "Engenheira Front-End",
     "exp.1.company": "Content Path (Remoto, UK)",
     "exp.1.period": "Set 2025 - Presente",
     "exp.1.achievement1":
-      "Desenvolvimento e manutenção de interfaces React em produção com foco em performance e usabilidade",
+      "Desenvolvimento de interfaces React em produção com foco em performance, escalabilidade e experiência do usuário",
     "exp.1.achievement2":
-      "Redução de 70–85% nos custos operacionais com IA através de estratégias de cache, batching e otimização de requisições",
+      "Redução de 70–85% nos custos operacionais com IA através de estratégias de cache, batching e otimização de fluxos",
     "exp.1.achievement3":
-      "Desenho e integração de APIs REST, melhorando o fluxo de dados e reduzindo o uso de APIs externas em até 90%",
-
+      "Implementação de estratégias local-first e otimização de APIs reduzindo chamadas externas em até 90–95%",
     "exp.2.role": "Engenheira Front-End",
     "exp.2.company": "Insucheck (Projeto MVP - Pipoca Ágil)",
     "exp.2.period": "2025",
     "exp.2.achievement1":
-      "Desenvolvimento de interfaces com React e TypeScript focando em usabilidade e qualidade de UI",
+      "Desenvolvimento de interfaces responsivas utilizando React, React Native e TypeScript com foco em usabilidade e qualidade visual",
     "exp.2.achievement2":
-      "Integração com APIs REST e contribuição na estruturação do backend e fluxo de dados",
+      "Integração com APIs REST e colaboração próxima com backend para melhorar fluxo de dados e entrega de funcionalidades",
     "exp.2.achievement3":
-      "Introdução do uso de Docker no projeto, melhorando a consistência do ambiente de desenvolvimento",
+      "Introdução de workflows com Docker no time, eliminando inconsistências de ambiente de desenvolvimento",
 
     // Tech Stack
     "tech.title": "Stack de Tecnologias",
@@ -112,24 +111,24 @@ const translations = {
     "tools.subtitle": "O que uso no meu fluxo de trabalho diário",
 
     // How I Think
-    "mindset.title": "Como Eu Penso",
-    "mindset.subtitle": "Minha abordagem para construir sistemas reais",
+    "mindset.title": "Mentalidade de Produto",
+    "mindset.subtitle": "Como penso ao construir experiências digitais",
 
-    "mindset.architecture.title": "Arquitetura Define o Resultado",
+    "mindset.architecture.title": "Experiência do Usuário Vem Primeiro",
     "mindset.architecture.desc":
-      "Boas decisões de arquitetura simplificam tudo que vem depois. Penso em fluxo de dados, escalabilidade e manutenção antes de escrever código.",
+      "Boas interfaces reduzem fricção e tornam sistemas complexos simples de usar. Priorizo clareza, responsividade e fluidez na experiência.",
 
     "mindset.iteration.title": "Iterar com Intenção",
     "mindset.iteration.desc":
       "Construo rápido, mas não de forma aleatória. Cada iteração resolve um problema claro e melhora o sistema como um todo.",
 
-    "mindset.quality.title": "Performance e Eficiência Importam",
+    "mindset.quality.title": "Performance é Parte da UX",
     "mindset.quality.desc":
-      "Não basta funcionar. Me preocupo com tempo de resposta, uso de recursos e custo, especialmente em sistemas que escalam ou usam IA.",
+      "Performance impacta diretamente a experiência do usuário. Me preocupo com tempo de resposta, renderização e eficiência de aplicações reais.",
 
-    "mindset.user.title": "Resolver Problemas Reais",
+    "mindset.user.title": "Tecnologia Precisa Gerar Valor",
     "mindset.user.desc":
-      "Tecnologia só tem valor quando resolve algo de verdade. Priorizo clareza, usabilidade e redução de fricção na experiência do usuário.",
+      "Meu foco é construir produtos úteis, intuitivos e escaláveis, equilibrando engenharia sólida com necessidades reais dos usuários.",
 
     // Contact
     "contact.title": "Vamos Conversar",
@@ -160,16 +159,16 @@ const translations = {
     // Hero
     "hero.greeting": "Hi, I'm",
     "hero.name": "Ana Gomes",
-    "hero.title": "Full-Stack Engineer",
+    "hero.title": "Software Engineer",
     "hero.tagline":
-      "Turning complex systems into fast, efficient, and scalable products.",
+      "Building fast, scalable, and AI-powered digital experiences.",
     "hero.cta.projects": "View Projects",
     "hero.cta.contact": "Contact",
     "hero.cta.resume": "Download Resume",
 
     // Highlights
-    "highlights.1.label": "Full-Stack",
-    "highlights.1.sublabel": "focused on performance and system design",
+    "highlights.1.label": "Frontend + Full-Stack",
+    "highlights.1.sublabel": "focused on product, performance and UX",
 
     "highlights.2.label": "1+ Year",
     "highlights.2.sublabel": "in production (real SaaS)",
@@ -180,9 +179,9 @@ const translations = {
     // About
     "about.title": "About Me",
     "about.bio":
-      "Full-Stack Engineer specialized in Ruby on Rails and React, with experience building and scaling production SaaS applications. Strong focus on performance, system design, and cost optimization — including reducing AI-related costs by up to 85% through caching strategies, batching, and request flow redesign.",
+      "Frontend-focused Software Engineer experienced in building modern SaaS applications, AI-powered interfaces, and scalable web products using React, Next.js, TypeScript, and Ruby on Rails. Strong focus on performance, user experience, and frontend architecture.",
     "about.bio2":
-      "I work end-to-end, from architecture decisions to deployment and monitoring, always aiming to solve real problems with efficient and scalable solutions. My approach combines solid engineering with attention to user experience, building products that are fast, reliable, and intuitive.",
+      "I work across the full stack, but my main focus is creating intuitive, responsive, and scalable user experiences while collaborating on APIs, AI workflows, and product architecture. My approach combines strong engineering practices with product thinking and attention to usability.",
 
     // Projects
     "projects.title": "Projects",
@@ -209,25 +208,29 @@ const translations = {
     "experience.present": "Present",
 
     // Experience items
-    "exp.1.role": "Full-Stack Engineer",
+    "exp.1.role": "Front-End Engineer",
     "exp.1.company": "Content Path (Remote, UK)",
     "exp.1.period": "Sep 2025 - Present",
     "exp.1.achievement1":
-      "Built and maintained production React interfaces with focus on performance and usability",
+      "Built and maintained production React interfaces focused on performance, scalability, and user experience",
+
     "exp.1.achievement2":
-      "Reduced AI operational costs by 70–85% through caching strategies, batching, and request flow optimization",
+      "Reduced AI operational costs by 70–85% through caching strategies, batching, and optimized request flows",
+
     "exp.1.achievement3":
-      "Designed and integrated REST APIs, improving data flow and reducing external API usage by up to 90%",
+      "Implemented local-first persistence and API optimization strategies reducing external API calls by up to 90–95%",
 
     "exp.2.role": "Front-End Engineer",
     "exp.2.company": "Insucheck (MVP Project - Pipoca Ágil)",
-    "exp.2.period": "2025",
+    "exp.2.period": "Jan 2023 - Aug 2023",
     "exp.2.achievement1":
-      "Developed frontend interfaces using React and TypeScript with focus on clean UI and usability",
+      "Developed responsive interfaces using React, React Native, and TypeScript with strong focus on usability and UI quality",
+
     "exp.2.achievement2":
-      "Integrated frontend with backend APIs and contributed to API structure and data flow",
+      "Integrated REST APIs and collaborated closely with backend teams to improve data flow and feature delivery",
+
     "exp.2.achievement3":
-      "Introduced Docker to the project, improving development consistency across the team",
+      "Introduced Docker-based workflows improving development environment consistency across the team",
 
     // Tech Stack
     "tech.title": "Tech Stack",
@@ -242,24 +245,23 @@ const translations = {
     "tools.subtitle": "What I use in my daily workflow",
 
     // How I Think
-    "mindset.title": "How I Think",
-    "mindset.subtitle": "My approach to building real-world systems",
+    "mindset.title": "Product Mindset",
+    "mindset.subtitle": "How I approach building digital experiences",
 
-    "mindset.architecture.title": "Architecture Drives Outcomes",
+    "mindset.architecture.title": "User Experience Comes First",
     "mindset.architecture.desc":
-      "Good architectural decisions simplify everything that follows. I think about data flow, scalability, and maintainability before writing code.",
-
-    "mindset.iteration.title": "Intentional Iteration",
+      "Good interfaces reduce friction and make complex systems feel intuitive. I prioritize clarity, responsiveness, and smooth user experiences.",
+    "mindset.iteration.title": "Build with Intention",
     "mindset.iteration.desc":
-      "I build fast, but not randomly. Each iteration solves a clear problem and improves the system as a whole.",
+      "Every feature should solve a real problem. I like iterating quickly without sacrificing technical consistency or product quality.",
 
-    "mindset.quality.title": "Performance and Efficiency Matter",
+    "mindset.quality.title": "Performance is Part of UX",
     "mindset.quality.desc":
-      "It's not enough for systems to work. I focus on response time, resource usage, and cost, especially in scalable and AI-driven systems.",
+      "Performance directly impacts user experience. I care about responsiveness, rendering efficiency, and real-world application performance.",
 
-    "mindset.user.title": "Solving Real Problems",
+    "mindset.user.title": "Technology Should Create Value",
     "mindset.user.desc":
-      "Technology only matters when it solves something real. I prioritize clarity, usability, and reducing friction in user experience.",
+      "My goal is building useful, scalable, and intuitive products that balance solid engineering with real user needs.",
 
     // Contact
     "contact.title": "Let's Talk",
