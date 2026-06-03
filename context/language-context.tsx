@@ -70,9 +70,9 @@ const translations = {
     "project.3.title": "Time Capsule",
     "project.3.description":
       "Aplicação full-stack para envio de mensagens ao futuro, com sistema de liberação temporal no backend e regras de acesso baseadas em data.",
-    "project.4.title": "Forge AI",
+    "project.4.title": "Choosy",
     "project.4.description":
-      "Plataforma de planejamento de projetos com IA que utiliza sistemas multi-agentes para transformar ideias em tasks, sprints e workflows dinâmicos, simulando um time de especialistas guiando decisões ao longo do desenvolvimento.",
+      "Plataforma de decisão em grupo que ajuda amigos e equipes a escolher onde comer por meio de votação colaborativa em tempo real. Construída com React, TypeScript, Ruby on Rails e PostgreSQL, incluindo salas compartilhadas, sincronização de estado e cálculo automático de resultados.",
 
     // Experience
     "experience.title": "Experiência",
@@ -199,9 +199,9 @@ const translations = {
     "project.3.title": "Time Capsule",
     "project.3.description":
       "Full-stack application for sending messages to your future self, featuring backend-enforced time-based content release and access control.",
-    "project.4.title": "Forge AI",
+    "project.4.title": "Choosy",
     "project.4.description":
-      "AI-powered project planning platform that uses multi-agent systems to transform ideas into structured tasks, sprints, and evolving workflows, simulating a team of specialists guiding development decisions over time.",
+      "Full-stack collaborative voting application built with React, TypeScript, Ruby on Rails, and PostgreSQL. Users join shared rooms, vote on food options in real time, and receive automatically calculated group recommendations through a synchronized voting workflow.",
 
     // Experience
     "experience.title": "Experience",
