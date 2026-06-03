@@ -39,9 +39,9 @@ const projects = [
     id: 4,
     titleKey: "project.4.title",
     descKey: "project.4.description",
-    tech: ["Ruby on Rails", "AI APIs", "LLMs", "Redis", "PostgreSQL"],
-    github: "https://github.com/devanaclimgo/forge-ai",
-    live: "https://github.com/devanaclimgo/forge-ai",
+    tech: ["React", "TypeScript", "Ruby on Rails", "PostgreSQL", "REST APIs"],
+    github: "https://github.com/devanaclimgo/choosy",
+    live: "https://choosy-front-production.up.railway.app",
     gradient: "from-primary/20 to-cyan-accent/20",
   },
 ];
