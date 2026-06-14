@@ -41,7 +41,7 @@ const projects = [
     descKey: "project.4.description",
     tech: ["React", "TypeScript", "Ruby on Rails", "PostgreSQL", "REST APIs"],
     github: "https://github.com/devanaclimgo/choosy",
-    live: "https://choosy-front-production.up.railway.app",
+    live: "https://choosy-production.up.railway.app",
     gradient: "from-primary/20 to-cyan-accent/20",
   },
 ];
