@@ -15,11 +15,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ana Gomes | Full-Stack Engineer (Ruby on Rails, React, TypeScript)",
+  title: "Ana Gomes | Software Engineer (Ruby on Rails, React, TypeScript)",
   description:
-    "Full-Stack Engineer focada em construir sistemas performáticos, escaláveis e eficientes, com experiência em otimização de custos e aplicações SaaS em produção.",
+    "Software Engineer focada em construir sistemas performáticos, escaláveis e eficientes, com experiência em otimização de custos e aplicações SaaS em produção.",
   keywords: [
     "full-stack engineer",
+    "software engineer",
+    "front-end engineer",
     "ruby on rails developer",
     "react developer",
     "typescript",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Ana Gomes" }],
   openGraph: {
-    title: "Ana Gomes | Full-Stack Engineer",
+    title: "Ana Gomes | Software Engineer",
     description:
-      "Full-Stack Engineer especializada em Ruby on Rails e React, com foco em performance, sistemas escaláveis e otimização de custos com IA.",
+      "Software Engineer especializada em Ruby on Rails e React, com foco em performance, sistemas escaláveis e otimização de custos com IA.",
     type: "website",
   },
 };

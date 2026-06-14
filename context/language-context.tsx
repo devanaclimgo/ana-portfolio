@@ -79,7 +79,7 @@ const translations = {
     "experience.present": "Presente",
 
     // Experience items
-    "exp.1.role": "Engenheira Front-End",
+    "exp.1.role": "Engenheira de Software",
     "exp.1.company": "Content Path (Remoto, UK)",
     "exp.1.period": "Set 2025 - Presente",
     "exp.1.achievement1":
@@ -208,7 +208,7 @@ const translations = {
     "experience.present": "Present",
 
     // Experience items
-    "exp.1.role": "Front-End Engineer",
+    "exp.1.role": "Software Engineer",
     "exp.1.company": "Content Path (Remote, UK)",
     "exp.1.period": "Sep 2025 - Present",
     "exp.1.achievement1":
